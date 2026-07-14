@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import React from 'react';
 import { Sidebar } from '../components/Sidebar';
 import { FanDashboard } from '../components/FanDashboard';
 import { OrganizerDashboard } from '../components/OrganizerDashboard';
@@ -133,19 +132,17 @@ describe('OrganizerDashboard Controls', () => {
 });
 
 // Custom matcher helper for trains text format
-interface CustomMatchers {
-  toBeIn5MinsText(): void;
+interface CustomMatchers<R = unknown> {
+  toBeIn5MinsText(): R;
 }
 
-declare global {
-  namespace vi {
-    interface Assertion extends CustomMatchers {}
-    interface AsymmetricMatchersContaining extends CustomMatchers {}
-  }
+declare module 'vitest' {
+  interface Assertion<T = any> extends CustomMatchers<T> {}
+  interface AsymmetricMatchersContaining extends CustomMatchers {}
 }
 
 expect.extend({
-  toBeIn5MinsText(received) {
+  toBeIn5MinsText(_received: any) {
     const hasDestination = screen.getByText('Downtown') !== null;
     const hasMinutes = screen.getByText('in 5 mins') !== null;
     return {

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { LiveData, WeatherInfo } from '../types';
-import { AIChatVoice } from './AIChatVoice';
+import { LiveData } from '../types';
 import { triggerAlert, sendChatMessage } from '../api';
 import {
-  Activity, Users, AlertTriangle, Leaf, Play,
-  TrendingUp, RefreshCw, Send, CheckCircle2, ChevronRight
+  Activity, Users, AlertTriangle, Leaf,
+  TrendingUp, RefreshCw, Send, CheckCircle2
 } from 'lucide-react';
 
 interface OrganizerDashboardProps {

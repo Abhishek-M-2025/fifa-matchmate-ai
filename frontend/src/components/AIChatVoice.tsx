@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Send, Mic, MicOff, Volume2, VolumeX, MessageSquare, Compass, AlertCircle } from 'lucide-react';
+import { Send, Mic, MicOff, Volume2, VolumeX, MessageSquare, Compass } from 'lucide-react';
 import { sendChatMessage } from '../api';
 
 interface AIChatVoiceProps {

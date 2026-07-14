@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import { vi } from 'vitest';
 
 // Mock window.speechSynthesis and window.webkitSpeechRecognition for standard headless environments
 Object.defineProperty(window, 'speechSynthesis', {

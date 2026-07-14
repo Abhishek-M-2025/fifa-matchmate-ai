@@ -30,7 +30,8 @@ const TRANSLATIONS = {
     langSelect: "Language",
     stadiumStatus: "Dallas Stadium Status",
     capacityLabel: "Capacity Occupied",
-    assistReqSuccess: "Volunteer help requested successfully. A crew member in an emerald shirt will reach your sector shortly."
+    assistReqSuccess: "Volunteer help requested successfully. A crew member in an emerald shirt will reach your sector shortly.",
+    requestVolunteer: "Request Assistance"
   },
   es: {
     transit: "Tránsito y Lanzaderas",
@@ -46,7 +47,8 @@ const TRANSLATIONS = {
     langSelect: "Idioma",
     stadiumStatus: "Estado del Estadio de Dallas",
     capacityLabel: "Capacidad Ocupada",
-    assistReqSuccess: "Ayuda voluntaria solicitada con éxito. Un miembro del equipo en camisa esmeralda llegará a su sector en breve."
+    assistReqSuccess: "Ayuda voluntaria solicitada con éxito. Un miembro del equipo en camisa esmeralda llegará a su sector en breve.",
+    requestVolunteer: "Solicitar Asistencia"
   },
   fr: {
     transit: "Transports & Navettes",
@@ -62,7 +64,8 @@ const TRANSLATIONS = {
     langSelect: "Langue",
     stadiumStatus: "Statut du Stade de Dallas",
     capacityLabel: "Capacité Occupée",
-    assistReqSuccess: "Demande d'aide envoyée. Un bénévole portant un maillot émeraude arrivera à votre secteur sous peu."
+    assistReqSuccess: "Demande d'aide envoyée. Un bénévole portant un maillot émeraude arrivera à votre secteur sous peu.",
+    requestVolunteer: "Demander de l'aide"
   }
 };
 

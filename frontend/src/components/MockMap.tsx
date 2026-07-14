@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import { LiveData } from '../types';
-import { Map, Layers, RefreshCw } from 'lucide-react';
+import { Map, RefreshCw } from 'lucide-react';
 
 interface MockMapProps {
   liveData: LiveData | null;
